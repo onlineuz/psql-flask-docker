@@ -1,0 +1,13 @@
+# docker-compose.yaml
+version: '3.7'
+
+services:
+  web:
+    build: '.'
+    ports:
+      - '5000:5000'
+    environment:
+      DB_HOST: '172.31.87.78'
+      DB_NAME: 'jamol'
+      DB_USERNAME: 'jamol'
+      DB_PASSWORD: 'jamol123'
